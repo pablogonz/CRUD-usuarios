@@ -1,0 +1,16 @@
+C:\Users\pjgon\source\repos\CRUDUSUARIOS\bin\Debug\CRUDUSUARIOS.exe.config
+C:\Users\pjgon\source\repos\CRUDUSUARIOS\bin\Debug\CRUDUSUARIOS.exe
+C:\Users\pjgon\source\repos\CRUDUSUARIOS\bin\Debug\CRUDUSUARIOS.pdb
+C:\Users\pjgon\source\repos\CRUDUSUARIOS\obj\Debug\CRUDUSUARIOS.csproj.AssemblyReference.cache
+C:\Users\pjgon\source\repos\CRUDUSUARIOS\obj\Debug\CRUDUSUARIOS.csproj.SuggestedBindingRedirects.cache
+C:\Users\pjgon\source\repos\CRUDUSUARIOS\obj\Debug\CRUDUSUARIOS.Form1.resources
+C:\Users\pjgon\source\repos\CRUDUSUARIOS\obj\Debug\CRUDUSUARIOS.Properties.Resources.resources
+C:\Users\pjgon\source\repos\CRUDUSUARIOS\obj\Debug\CRUDUSUARIOS.csproj.GenerateResource.cache
+C:\Users\pjgon\source\repos\CRUDUSUARIOS\obj\Debug\CRUDUSUARIOS.csproj.CoreCompileInputs.cache
+C:\Users\pjgon\source\repos\CRUDUSUARIOS\obj\Debug\CRUDUSUARIOS.exe
+C:\Users\pjgon\source\repos\CRUDUSUARIOS\obj\Debug\CRUDUSUARIOS.pdb
+C:\Users\pjgon\source\repos\CRUDUSUARIOS\bin\Debug\EntityFramework.dll
+C:\Users\pjgon\source\repos\CRUDUSUARIOS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pjgon\source\repos\CRUDUSUARIOS\bin\Debug\EntityFramework.xml
+C:\Users\pjgon\source\repos\CRUDUSUARIOS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pjgon\source\repos\CRUDUSUARIOS\obj\Debug\CRUDUSUARIOS.csproj.CopyComplete
