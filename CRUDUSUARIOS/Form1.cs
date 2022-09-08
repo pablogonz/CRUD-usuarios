@@ -203,10 +203,6 @@ namespace CRUDUSUARIOS
             btadd.Enabled = false;
             btsave.Enabled = true;
             btcancel.Enabled = true;
-            if (ValidateForm())
-            {
-                SaveForm();
-            }
         }
 
         private void btcancel_Click(object sender, EventArgs e)
@@ -221,7 +217,7 @@ namespace CRUDUSUARIOS
             btcancel.Enabled = false;
         }
 
-        private void dgvusers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvusers_Click(object sender, DataGridViewCellEventArgs e)
         {
             PeopleId = String.Empty;
 
@@ -233,8 +229,8 @@ namespace CRUDUSUARIOS
             }
             else
             {
-                btupdate.Visible = false;
-                btDelete.Visible = false;
+                btupdate.Visible = true;
+                btDelete.Visible = true;
             }
         }
         private void GetPeopleById(string peopleId)
@@ -276,6 +272,39 @@ namespace CRUDUSUARIOS
         {
            chksupportstaff.Text = chksupportstaff.Checked ? "SI" : "NO";
         }
+
+        private void btDelete_Click(object sender, EventArgs e)
+        {
+            db.People.Remove(db.People.SingleOrDefault(x => x.Id == this.PeopleId));
+            db.SaveChanges();
+        }
+
+        private void btsave_Click(object sender, EventArgs e)
+        {
+            if (ValidateForm())
+            {
+                SaveForm();
+            }
+            else
+            {
+                string errors = string.Empty;
+                int errorIndex = 1;
+                foreach (var item in Msg)
+                {
+                    errors += $"{errorIndex}. - {item.ToString()}\n";
+                    errorIndex++;
+                }
+
+                MessageBox.Show(errors, "ERRORS", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+            }
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 
 }

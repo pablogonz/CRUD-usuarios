@@ -310,7 +310,7 @@
             // 
             // txtpassword
             // 
-            this.txtpassword.Location = new System.Drawing.Point(102, 79);
+            this.txtpassword.Location = new System.Drawing.Point(134, 79);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.Size = new System.Drawing.Size(183, 22);
             this.txtpassword.TabIndex = 22;
@@ -318,7 +318,7 @@
             // 
             // txtusername
             // 
-            this.txtusername.Location = new System.Drawing.Point(102, 40);
+            this.txtusername.Location = new System.Drawing.Point(139, 40);
             this.txtusername.Name = "txtusername";
             this.txtusername.Size = new System.Drawing.Size(183, 22);
             this.txtusername.TabIndex = 20;
@@ -326,7 +326,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(15, 82);
+            this.label10.Location = new System.Drawing.Point(48, 82);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(67, 16);
             this.label10.TabIndex = 21;
@@ -336,11 +336,12 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(15, 43);
+            this.label11.Location = new System.Drawing.Point(48, 43);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(70, 16);
             this.label11.TabIndex = 19;
             this.label11.Text = "Username";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // chksupportstaff
             // 
@@ -389,6 +390,7 @@
             this.btsave.TabIndex = 27;
             this.btsave.Text = "Save";
             this.btsave.UseVisualStyleBackColor = true;
+            this.btsave.Click += new System.EventHandler(this.btsave_Click);
             // 
             // btcancel
             // 
@@ -420,7 +422,6 @@
             this.dgvusers.RowTemplate.Height = 24;
             this.dgvusers.Size = new System.Drawing.Size(1271, 181);
             this.dgvusers.TabIndex = 30;
-            this.dgvusers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvusers_CellContentClick);
             // 
             // btedit2
             // 
@@ -459,7 +460,7 @@
             // btupdate
             // 
             this.btupdate.Enabled = false;
-            this.btupdate.Location = new System.Drawing.Point(330, 876);
+            this.btupdate.Location = new System.Drawing.Point(455, 876);
             this.btupdate.Name = "btupdate";
             this.btupdate.Size = new System.Drawing.Size(75, 23);
             this.btupdate.TabIndex = 35;
@@ -470,20 +471,21 @@
             // btDelete
             // 
             this.btDelete.Enabled = false;
-            this.btDelete.Location = new System.Drawing.Point(427, 876);
+            this.btDelete.Location = new System.Drawing.Point(342, 876);
             this.btDelete.Name = "btDelete";
-            this.btDelete.Size = new System.Drawing.Size(75, 23);
+            this.btDelete.Size = new System.Drawing.Size(92, 23);
             this.btDelete.TabIndex = 36;
             this.btDelete.Text = "Delete";
             this.btDelete.UseVisualStyleBackColor = true;
+            this.btDelete.Click += new System.EventHandler(this.btDelete_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1275, 1055);
-            this.Controls.Add(this.btDelete);
             this.Controls.Add(this.btupdate);
+            this.Controls.Add(this.btDelete);
             this.Controls.Add(this.txtCreatedDate);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.btedit1);
